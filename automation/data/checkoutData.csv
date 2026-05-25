@@ -1,0 +1,7 @@
+scenario,username,password,firstName,lastName,zipCode,expectedCheckoutResult,expectedError
+standard_purchase,standard_user,secret_sauce,John,Doe,94043,success,
+performance_purchase,performance_glitch_user,secret_sauce,Jane,Smith,94043,success,
+problem_purchase,problem_user,secret_sauce,Peter,Jones,94043,problem,"Last Name is required"
+empty_firstname,standard_user,secret_sauce,,Doe,94043,empty_firstname,"Error: First Name is required"
+empty_lastname,standard_user,secret_sauce,John,,94043,empty_lastname,"Error: Last Name is required"
+empty_zip,standard_user,secret_sauce,John,Doe,,empty_zip,"Error: Postal Code is required"

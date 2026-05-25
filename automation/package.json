@@ -1,0 +1,15 @@
+{
+  "name": "ai-qa-platform-automation",
+  "version": "1.0.0",
+  "description": "Playwright Automation Framework for SauceDemo",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:sanity": "playwright test --grep @sanity",
+    "test:regression": "playwright test --grep @regression"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.44.0"
+  }
+}

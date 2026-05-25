@@ -1,0 +1,14 @@
+{
+  "Smoke": [
+    "TC_AUTH_LOGIN"
+  ],
+  "Sanity": [
+    "TC_CATALOG_CART"
+  ],
+  "Regression": [
+    "TC_PURCHASE_STANDARD",
+    "TC_PURCHASE_PERFORMANCE",
+    "TC_PURCHASE_PROBLEM",
+    "TC_CHECKOUT_VALIDATIONS"
+  ]
+}

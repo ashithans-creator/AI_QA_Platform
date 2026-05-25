@@ -1,0 +1,8 @@
+scenario,username,password,expectedLoginResult,expectedError
+valid_standard,standard_user,secret_sauce,success,
+locked_user,locked_out_user,secret_sauce,locked_out,"Sorry, this user has been locked out"
+invalid_credentials,invalid_user,secret_sauce,invalid_credentials,Username and password do not match
+empty_username,,secret_sauce,empty_username,Username is required
+empty_password,standard_user,,empty_password,Password is required
+problem_user,problem_user,secret_sauce,success,
+performance_user,performance_glitch_user,secret_sauce,success,

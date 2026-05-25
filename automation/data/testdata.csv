@@ -1,0 +1,11 @@
+username,password,expectedLoginResult,firstName,lastName,zipCode,expectedCheckoutResult
+standard_user,secret_sauce,success,John,Doe,94043,success
+locked_out_user,secret_sauce,locked_out,John,Doe,94043,fail
+problem_user,secret_sauce,success,John,Doe,94043,problem
+performance_glitch_user,secret_sauce,success,John,Doe,94043,success
+invalid_user,secret_sauce,invalid_credentials,John,Doe,94043,fail
+empty_user,secret_sauce,empty_username,John,Doe,94043,fail
+standard_user,empty_pass,empty_password,John,Doe,94043,fail
+standard_user,secret_sauce,success,,Doe,94043,empty_firstname
+standard_user,secret_sauce,success,John,,94043,empty_lastname
+standard_user,secret_sauce,success,John,Doe,,empty_zip
