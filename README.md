@@ -9,6 +9,7 @@ This platform combines AI Test Case Generation, AI Defect Reporting (with Jira I
 - **AI Defect Reporting:** Log bugs with AI-generated Root Cause Analysis (RCA) and automatically push them to Jira.
 - **API Testing Assistant:** Upload Swagger/OpenAPI specs to automatically generate RestAssured (Java) API automation code.
 - **AI Database Assistant:** Query your database using Natural Language. The AI safely translates your prompt into SQL and executes it securely.
+- **CSV Data-Driven Testing:** Manage SauceDemo test parameters inline (edit/save datasets directly from the UI) and execute individual test scenarios instantly with live terminal output.
 - **Automation Runner & Dashboard:** Trigger Playwright E2E automation suites (Smoke, Sanity, Regression) directly from the UI and watch the execution logs stream in real-time.
 - **Analytics Dashboard:** Visualize pass/fail test execution metrics and defect trends with beautiful charts.
 
