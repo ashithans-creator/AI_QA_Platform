@@ -247,15 +247,6 @@ async function initSQLite() {
         created_at DATETIME DEFAULT CURRENT_TIMESTAMP
       )
     `);
-
-    // Insert admin user if not exists
-    const admin = await sqliteAll("SELECT * FROM users WHERE username = 'admin'");
-    if (admin.length === 0) {
-      // password is 'admin123'
-      const hash = '$2a$10$gEvyTz4H.r/sXG3Y.5j2.eH0/p335FqY2l6C9l/90t/9b5o0o7LKu';
-      await sqliteRun("INSERT INTO users (username, password, role) VALUES ('admin', ?, 'ADMIN')", [hash]);
-      console.log('✅ Seeded SQLite admin user');
-    }
   } catch (err) {
     console.error('❌ Error setting up SQLite tables:', err.message);
   }

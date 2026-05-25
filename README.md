@@ -63,9 +63,6 @@ If you don't have MySQL installed, the platform automatically falls back to an e
    docker-compose up --build
    ```
 3. Access the platform at **http://localhost:3001**
-4. *Default Admin Login:* 
-   - **Username:** `admin`
-   - **Password:** `admin123`
 
 ## 🧪 Testing Logs & Execution
 

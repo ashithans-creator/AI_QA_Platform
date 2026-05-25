@@ -79,8 +79,3 @@ CREATE TABLE IF NOT EXISTS api_collections (
   code_generated LONGTEXT,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
--- Seed Initial Admin User (password is 'admin123' bcrypt hashed: $2a$10$gEvyTz4H.r/sXG3Y.5j2.eH0/p335FqY2l6C9l/90t/9b5o0o7LKu)
-INSERT INTO users (username, password, role) VALUES 
-('admin', '$2a$10$gEvyTz4H.r/sXG3Y.5j2.eH0/p335FqY2l6C9l/90t/9b5o0o7LKu', 'ADMIN')
-ON DUPLICATE KEY UPDATE id=id;
